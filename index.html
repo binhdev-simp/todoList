@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+    <input type="text" class="inputItem" placeholder="Nhap vao day">
+    <button class="addItem">Add</button>
+    <div>
+        <ul>
+        </ul>
+    </div>
+</body>
+<script>
+    const textbox = document.querySelector('.inputItem');
+    const addBtn = document.querySelector('.addItem');
+    const ulList = document.querySelector('ul');
+    const todoList = document.querySelector('.lister');
+    const textTodo = document.querySelector('.todoText');
+    var i=0;
+    //remove element when done
+    
+    //add element
+    addBtn.onclick = function(){
+        if(textbox.value != ''){
+            var liCre = document.createElement('li');
+            var pCre = document.createElement('p');
+            var removeCre = document.createElement('button');
+
+            //set attr button remove
+            removeCre.setAttribute('class','removeItem');
+            liCre.setAttribute('class','lister');
+            pCre.setAttribute('class','todoText');
+            removeCre.innerHTML="Remove";
+            pCre.innerHTML=textbox.value + ' ';
+
+            ulList.appendChild(liCre);
+            liCre.appendChild(pCre);
+            pCre.appendChild(removeCre);
+            textbox.value='';
+            //research value
+            //ĐOẠN NÀY ĐANG NGHĨ LÚC KHÁC LÀM :D
+
+            
+        }
+        else{
+            alert("Hãy nhập một cái gì đó");
+        }
+        //remove button working
+        removeCre.onclick=function(){
+                liCre.remove();
+            }
+        pCre.onclick =function(){
+        liCre.remove();
+    }
+    }
+    
+</script>
+</html>
