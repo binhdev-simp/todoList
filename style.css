@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+   body{
+        width: 100vw;
+        margin: 0px auto;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        background: rgb(255, 192, 203);
+        overflow-x: hidden;
+   } 
+   .inputItem{
+       width: 80vw;
+       height: 50px;
+       font-size: 25px;
+       border:none;
+       border-radius: 10px;
+       margin-top: 1vh;
+       font-family: 'Courier New', Courier, monospace;
+   }
+   .inputItem:focus{
+       border: none;
+   }
+   .addItem{
+       width: 8vw;
+       height: 35px;
+       margin-left: 1vw;
+       border: none;
+       background-color: palevioletred;
+       color: bisque;
+       border-radius: 5px;
+   }
+   .addItem:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+   }
+   div ul {
+       margin: 0px;
+       padding: 0px;
+       clear: left;
+       text-align: center;
+   }
+   div ul li {
+       width: 80vw;
+       height: 50px;
+       margin-left: 5vw;
+       border:none;
+       border-radius: 10px;
+       line-height: 50px;
+       background-color: whitesmoke;
+       list-style: none;
+       cursor: pointer;
+       opacity: 0.75;
+   }
+   ::placeholder{
+       font-size: 25px;
+   }
+   div ul li:hover{
+       opacity: 1;
+       background-color: crimson;
+   }
