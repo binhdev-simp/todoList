@@ -23,9 +23,10 @@
        border: none;
    }
    .addItem{
-       width: 5vw;
+       width: 8vw;
        height: 35px;
-       margin-left: 1vw;
+       margin-left: 0.5vw;
+       font-size: 12px;
        border: none;
        background-color: palevioletred;
        color: bisque;
