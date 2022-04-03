@@ -1,63 +1,71 @@
 *{
     box-sizing: border-box;
-}
-   body{
-        width: 100vw;
-        margin: 0px auto;
-        font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
-        text-align: center;
-        background: rgb(255, 192, 203);
-        overflow-x: hidden;
-   } 
-   .inputItem{
-       width: 80vw;
-       height: 50px;
-       font-size: 25px;
-       border:none;
-       border-radius: 10px;
-       margin-top: 1vh;
-       font-family: 'Courier New', Courier, monospace;
-   }
-   .inputItem:focus{
-       border: none;
-   }
-   .addItem{
-       width: 8vw;
-       height: 35px;
-       margin-left: 0.5vw;
-       font-size: 12px;
-       border: none;
-       background-color: palevioletred;
-       color: bisque;
-       border-radius: 5px;
-   }
-   .addItem:hover{
-    transform: scale(1.2,1.2);
+    }
+    body{
+    width: 100vw;
+    margin: 0px auto;
+    font-size: 20px;
+    font-family: 'Fredoka', Courier, monospace;
+    text-align: center;
+    overflow-x: hidden;
+    background-image: url('./background.jpg');
+    animation: 20s ease alternate infinite ;
+    }
+    /*cmt*/
+    .inputItem{
+    width: 60vw;
+    height: 50px;
+    font-size: 25px;
+    border:none;
+    border-radius: 10px;
+    margin-top: 1vh;
+    font-family: 'Fredoka', Courier, monospace;
+    text-align: center;
+    }
+    .inputItem:focus{
+    border: none;
+    }
+    .inputItem:hover{
+    border: none;
+    }
+    .addItem{
+    width: 8vw;
+    height: 35px;
+    margin-left: 0.5vw;
+    font-size: 12px;
+    border: none;
+    background-color: #1e85d4a6;
+    color: bisque;
+    border-radius: 5px;
+    }
+    .addItem:hover{
+    transform: scale(1.15,1.15);
     cursor: pointer;
-   }
-   div ul {
-       margin: 0px;
-       padding: 0px;
-       clear: left;
-       text-align: center;
-   }
-   div ul li {
-       width: 80vw;
-       height: 50px;
-       margin-left: 5vw;
-       border:none;
-       border-radius: 10px;
-       line-height: 50px;
-       background-color: whitesmoke;
-       list-style: none;
-       cursor: pointer;
-       opacity: 0.75;
-   }
-   ::placeholder{
-       font-size: 25px;
-   }
-   div ul li:hover{
-       opacity: 1;
-       background-color: crimson;
-   }
+    border:none;
+    }
+    div ul {
+    margin: 0px;
+    padding: 0px;
+    clear: left;
+    text-align: center;
+    }
+    div ul li {
+    width: 80vw;
+    height: 50px;
+    margin-left: 5vw;
+    border:none;
+    border-radius: 10px;
+    line-height: 50px;
+    background-color: whitesmoke;
+    list-style: none;
+    cursor: pointer;
+    opacity: 0.75;
+    }
+    ::placeholder{
+    font-size: 25px;
+    }
+    div ul li:hover{
+    opacity: 1;
+    background-color: #0093E9;
+    background-image: linear-gradient(60deg, #0094e9c7 50%, #80d0c7d0 100%);
+    }
